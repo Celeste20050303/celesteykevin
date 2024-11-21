@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.container {
+    background-color: #f9c8d7; 
+    color: rgb(136, 135, 135);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4c2b4f; 
+}
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #4c2b4f; 
+}
+.dog-image .image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.curiosities .curiosity-list {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #4c2b4f; 
+}
+.curiosities .curiosity-list li {
+    margin: 10px 0;
+}
+.section-title {
+    font-size: 2rem;
+    color: #a09e9e;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.dog-video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.dog-link .link {
+    font-size: 1.5rem;
+    color: #ff7ecb;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #ff7ecb;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.dog-link .link:hover {
+    background: #ff7ecb;
+    color: white;
+}
+.dog-audio audio {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes fadeIn {
+ 0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+ 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.container {
+    animation: fadeIn 1.5s ease-out;
+}
